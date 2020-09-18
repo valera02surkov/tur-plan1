@@ -104,7 +104,7 @@ body {
   right: 0;
   width: 65px;
   height: 100%;
-  border: non;
+  border: none;
   background-color: #ec1f46;
 }
 
@@ -209,6 +209,12 @@ body {
 }
 
 @media (max-width: 576px) {
+  .logo {
+    width: 99px;
+  }
+}
+
+@media (max-width: 320px) {
   .logo {
     width: 99px;
   }
