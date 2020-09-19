@@ -591,6 +591,10 @@ body {
   line-height: 18px;
 }
 
+.rating__counter--sup {
+  font-size: 10px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
