@@ -825,7 +825,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 730px;
+  max-width: 730px;
   margin: auto;
   margin-top: 45px;
   background-color: #fff;
@@ -933,7 +933,7 @@ body {
   .container {
     max-width: 960px;
   }
-  .slider {
+  .hotel-slider {
     width: 590px;
   }
   .swiper-slide__imge {
@@ -979,14 +979,26 @@ body {
   .hotel-right {
     flex-direction: row;
   }
+  .hotel-slider {
+    width: 100%;
+  }
   .booking {
     width: 340px;
   }
-  .slider {
-    width: 100%;
-  }
   .map {
     width: 340px;
+  }
+  .reviews-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+  .reviews-slider__item {
+    max-width: 580px;
   }
 }
 
@@ -1044,12 +1056,12 @@ body {
     order: -1;
     margin-left: 0;
   }
-  .slider {
-    height: 350px;
-  }
   .hotel-right {
     flex-direction: column;
     min-height: 450px;
+  }
+  .hotel-slider {
+    height: 350px;
   }
   .booking {
     width: 100%;
@@ -1063,13 +1075,41 @@ body {
     flex-direction: column;
     align-items: start;
   }
+  .reviews-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+  .reviews-slider__item {
+    padding: 0 30px 30px;
+  }
+  .reviews-slider__item:after, .reviews-slider__item:before {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 32px;
+  }
+  .reviews-slider__button--prev {
+    margin-left: -65px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .reviews-slider__button--next {
+    margin-right: -65px;
+    right: 50%;
+    transform: translate(50%, 0);
+  }
 }
 
 @media (max-width: 576px) {
   .logo {
     width: 99px;
   }
-  .slider {
+  .hotel-slider {
     height: 250px;
   }
   .hotel__slider {
@@ -1084,17 +1124,35 @@ body {
   .subscribe {
     width: 100%;
   }
+  .reviws-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 320px) {
   .logo {
     width: 99px;
   }
-  .slider {
+  .hotel-slider {
     height: 200px;
   }
   .hotel__slider {
     margin-bottom: 20px;
+  }
+  .reviws-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
