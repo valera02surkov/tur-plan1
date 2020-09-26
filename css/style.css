@@ -1222,12 +1222,12 @@ body {
   .subscribe {
     width: 100%;
   }
-  .reviws-title {
+  .reviews-title {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 23px;
-    text-align: center;
+    text-align: start;
     text-transform: uppercase;
     margin-bottom: 40px;
   }
@@ -1243,10 +1243,13 @@ body {
   .hotel-slider {
     height: 200px;
   }
-  .hotel__slider {
+  .hotel-slider__slider {
     margin-bottom: 20px;
   }
-  .reviws-title {
+  .reviews-slider__text {
+    text-align: start;
+  }
+  .reviews-title {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
