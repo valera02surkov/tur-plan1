@@ -111,4 +111,4 @@ function init() {
     )
   );
 }
-$(".newsletter").parallax({ imageSrc: "./img/newsletter-bg.jpg" });
+$(".newsletter").parallax({ imageSrc: "url(../img/newsletter-bg.jpg)" });

@@ -1300,6 +1300,16 @@ body {
     max-width: 576px;
     width: 92%;
   }
+  .other__container {
+    max-width: 576px;
+    margin: auto;
+    column-gap: 15px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 350px);
+  }
+  .other-van__card {
+    display: none;
+  }
   .navbar-menu {
     display: none;
   }
@@ -1472,6 +1482,14 @@ body {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 40px;
+  }
+  .other__container {
+    max-width: 320px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 320px);
+  }
+  .other-van__card {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

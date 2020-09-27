@@ -77,6 +77,16 @@
   .container
     max-width: 576px
     width: 92%
+  .other
+    &__container
+      max-width: 576px
+      margin: auto
+      column-gap: 15px
+      justify-content: center
+      grid-template-columns: repeat(auto-fill, 350px)
+    &-van
+      &__card
+        display: none
   .navbar
     &-menu 
       display: none
@@ -222,3 +232,11 @@
       text-align: center
       text-transform: uppercase
       margin-bottom: 40px
+  .other
+    &__container
+      max-width: 320px
+      justify-content: center
+      grid-template-columns: repeat(auto-fill, 320px)
+    &-van
+      &__card
+        display: none
