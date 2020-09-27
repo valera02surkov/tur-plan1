@@ -13,6 +13,11 @@
   .card
     width: 230px
     height: 230px
+  .other
+    &__container
+      max-width: 960px
+      justify-content: center
+      grid-template-columns: repeat(auto-fill, 350px)
 @media ( max-width: 992px  )
   .container, 
   .newsletter-wrapper
@@ -161,6 +166,14 @@
     width: 49%
     height: 255px
 @media ( max-width: 576px )
+  .other
+    &__container
+      max-width: 576px
+      justify-content: center
+      grid-template-columns: repeat(auto-fill, 350px)
+    &-van
+      &__card
+        display: none
   .logo
     width: 99px  
   .hotel
@@ -176,6 +189,8 @@
     width: 100%
   .reviews
     &-title
+      max-width: 345px
+      margin: auto
       font-style: normal
       font-weight: bold
       font-size: 18px
@@ -198,6 +213,8 @@
       &__text
         text-align: start
     &-title
+      margin: auto
+      max-width: 245px
       font-style: normal
       font-weight: bold
       font-size: 18px

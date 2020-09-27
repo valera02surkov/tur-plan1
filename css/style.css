@@ -358,6 +358,7 @@ body {
 
 .newsletter {
   position: relative;
+  margin-top: 70px;
   padding: 98px 0 87px 0;
   background-image: url(../img/newsletter-bg.jpg);
   background-repeat: no-repeat;
@@ -1007,6 +1008,9 @@ body {
 
 .other__container {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
 }
 
 .other-title {
@@ -1021,9 +1025,9 @@ body {
 
 .other-van__card {
   display: flex;
-  margin-bottom: 35px;
   max-width: 730px;
   height: 500px;
+  grid-column-start: span 2;
 }
 
 .other-menu {
@@ -1034,6 +1038,11 @@ body {
   color: #ffffff;
   padding-left: 45px;
   padding-right: 20px;
+}
+
+.other-menu-mini__title {
+  margin: 0;
+  margin-bottom: 23px;
 }
 
 .other-menu__title {
@@ -1063,13 +1072,8 @@ body {
   margin-left: 15px;
 }
 
-.other-menu-mini__button {
-  position: absolute;
-  right: 21px;
-  bottom: 25px;
-  background: #ec1f46;
-  color: #ffffff;
-  border-radius: 4px;
+.other-text__txt {
+  margin-left: 15px;
 }
 
 .other-stong {
@@ -1147,45 +1151,52 @@ body {
   left: 0;
 }
 
-.other-card-mini {
-  position: relative;
-  max-width: 500px;
-  height: 350px;
-}
-
-.other-card-mini__menu {
-  max-width: 250px;
-  background-color: #0a223d;
-  color: #ffffff;
-}
-
-.other-card-mini__photo {
-  position: relative;
-}
-
-.other-card-mini__title {
-  margin-top: 30px;
-  margin-bottom: 23px;
+.other-card-mini-stong__min {
+  margin-top: 13px;
+  margin-bottom: 5px;
   font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 23px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration-line: line-through;
 }
 
-.other-card-mini__text {
+.other-card-mini__button {
+  right: 21px;
+  bottom: 25px;
+}
+
+.other-card-mini-img {
+  position: relative;
+  max-width: 350px;
+  height: 250px;
+  object-fit: contain;
+  overflow: hidden;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.other-card-mini-img__card {
   position: absolute;
-  top: 26px;
   left: 0;
+  top: 26px;
   padding: 4px 9px 4px 9px;
-  width: 60px;
-  height: 18px;
-  border-radius: 0px 4px 4px 0px;
   background-color: #ec1f46;
   color: #ffffff;
+  border-radius: 0 4px 4px 0;
   font-style: normal;
   font-weight: 600;
   font-size: 8px;
   line-height: 10px;
+}
+
+.other-card-mini__text {
+  position: relative;
+  max-width: 350px;
+  height: 250px;
+  padding: 30px 48px 35px 32px;
+  background-color: #0a223d;
+  color: #ffffff;
+  border-radius: 0px 0px 8px 8px;
 }
 
 .botton {
@@ -1207,6 +1218,11 @@ body {
   .card {
     width: 230px;
     height: 230px;
+  }
+  .other__container {
+    max-width: 960px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 350px);
   }
 }
 
@@ -1391,6 +1407,14 @@ body {
 }
 
 @media (max-width: 576px) {
+  .other__container {
+    max-width: 576px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 350px);
+  }
+  .other-van__card {
+    display: none;
+  }
   .logo {
     width: 99px;
   }
@@ -1410,6 +1434,8 @@ body {
     width: 100%;
   }
   .reviews-title {
+    max-width: 345px;
+    margin: auto;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -1437,6 +1463,8 @@ body {
     text-align: start;
   }
   .reviews-title {
+    margin: auto;
+    max-width: 245px;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;

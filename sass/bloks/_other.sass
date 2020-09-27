@@ -1,6 +1,9 @@
 .other
   &__container
     display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    column-gap: 30px 
+    row-gap: 30px
   &-title
     font-style: normal
     font-weight: bold
@@ -12,9 +15,9 @@
   &-van
     &__card
       display: flex
-      margin-bottom: 35px
       max-width: 730px
       height: 500px 
+      grid-column-start: span 2
   &-menu
     position: relative
     max-width: 364px 
@@ -23,6 +26,10 @@
     color: $light
     padding-left: 45px
     padding-right: 20px
+    &-mini
+      &__title
+        margin: 0
+        margin-bottom: 23px
     &__title
       margin-top: 0
       font-style: normal
@@ -42,6 +49,9 @@
         margin-bottom: 11px
       &__txt
         margin-left: 15px
+  &-text
+    &__txt
+      margin-left: 15px
   &-stong
     display: flex
     flex-direction: column
@@ -99,6 +109,46 @@
         border-radius: 0 4px 4px 0
         top: 26px
         left: 0
+    &-mini
+      &-stong
+        &__min
+          margin-top: 13px
+          margin-bottom: 5px
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 18px
+          text-decoration-line: line-through
+      &__button
+        right: 21px
+        bottom: 25px
+      &-img
+        position: relative
+        max-width: 350px
+        height: 250px
+        object-fit: contain
+        overflow: hidden
+        border-radius: 8px 8px 0px 0px
+        &__card
+          position: absolute
+          left: 0
+          top: 26px
+          padding: 4px 9px 4px 9px
+          background-color: $primory
+          color: $light
+          border-radius: 0 4px 4px 0
+          font-style: normal;
+          font-weight: 600
+          font-size: 8px
+          line-height: 10px
+      &__text
+        position: relative
+        max-width: 350px
+        height: 250px
+        padding: 30px 48px 35px 32px
+        background-color: $dark
+        color: $light
+        border-radius: 0px 0px 8px 8px
 .botton
   border: none
 
