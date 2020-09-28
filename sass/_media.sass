@@ -98,8 +98,7 @@
     &__additional
       grid-column: span 2 
     &__cantact
-      &-diteils
-        grid-row: 3
+      &-derails
         grid-column: span 5
       &-form
         grid-column: span 5
@@ -270,16 +269,22 @@
     &__cantact
       &-derails
         grid-row: 6
+        flex-basis: 100%
         grid-column: 1
       &-form
         grid-row: 7
         grid-column: 1
     &__bottom
+      display: flex
+      flex-wrap: wrap
       &--mr
-        grid-row: 9
-        grid-column: 1
-      &--img
         grid-row: 8
+        grid-column: 1
+      &--text
+        margin-right: 7px
+      &--img
+        margin-top: 10px
+        grid-row: 9
         grid-column: 1
 @media  ( max-width:320px  )
   .logo 

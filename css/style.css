@@ -1492,8 +1492,7 @@ body {
   .footer__additional {
     grid-column: span 2;
   }
-  .footer__cantact-diteils {
-    grid-row: 3;
+  .footer__cantact-derails {
     grid-column: span 5;
   }
   .footer__cantact-form {
@@ -1697,18 +1696,27 @@ body {
   }
   .footer__cantact-derails {
     grid-row: 6;
+    flex-basis: 100%;
     grid-column: 1;
   }
   .footer__cantact-form {
     grid-row: 7;
     grid-column: 1;
   }
+  .footer__bottom {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .footer__bottom--mr {
-    grid-row: 9;
+    grid-row: 8;
     grid-column: 1;
   }
+  .footer__bottom--text {
+    margin-right: 7px;
+  }
   .footer__bottom--img {
-    grid-row: 8;
+    margin-top: 10px;
+    grid-row: 9;
     grid-column: 1;
   }
 }
