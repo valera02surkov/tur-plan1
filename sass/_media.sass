@@ -18,6 +18,9 @@
       max-width: 960px
       justify-content: center
       grid-template-columns: repeat(auto-fill, 350px)
+  .footer
+    &__imput
+      flex-basis: 100%
 @media ( max-width: 992px  )
   .container, 
   .newsletter-wrapper
@@ -73,6 +76,37 @@
   .card
     width: 340px
     height: 250px
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &__imput
+      flex-basis: 49%
+    &__logo
+      grid-row: 1/2
+      grid-column: span 2  
+    &__social
+      &-network
+        grid-row: 1/2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2/3
+      grid-column: span 2
+    &__legal
+      grid-column: span 2
+    &__additional
+      grid-column: span 2 
+    &__cantact
+      &-diteils
+        grid-row: 3
+        grid-column: span 5
+      &-form
+        grid-column: span 5
+        grid-row: 4
+    &__bottom
+      grid-column: 1/6
+      grid-row: span 6
 @media ( max-width: 768px  )
   .container
     max-width: 576px
@@ -175,6 +209,9 @@
   .card
     width: 49%
     height: 255px
+  .footer
+    &__imput
+      flex-basis: 100%
 @media ( max-width: 576px )
   .other
     &__container
@@ -210,6 +247,40 @@
       margin-bottom: 40px
   .card
     width: 100%
+  .footer
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-gap: 10px
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+    &__additional
+      grid-row: 3
+      grid-column: 1
+    &__categories
+      grid-row: 4
+      grid-column: 1
+    &__legal
+      grid-row: 5px
+      grid-column: 1
+    &__cantact
+      &-derails
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
+    &__bottom
+      &--mr
+        grid-row: 9
+        grid-column: 1
+      &--img
+        grid-row: 8
+        grid-column: 1
 @media  ( max-width:320px  )
   .logo 
     width: 99px
