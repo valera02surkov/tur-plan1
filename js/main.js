@@ -111,4 +111,3 @@ function init() {
     )
   );
 }
-$(".newsletter").parallax({ imageSrc: "url(../img/newsletter-bg.jpg)" });

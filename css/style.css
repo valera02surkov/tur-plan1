@@ -1255,6 +1255,7 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 95px;
 }
 
 .footer__ul {
@@ -1349,6 +1350,27 @@ body {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-column: 2/6;
+}
+
+.footer__bottom--text {
+  cursor: pointer;
+  margin-right: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.footer__img {
+  max-width: 136px;
+  height: 22px;
 }
 
 @media (max-width: 1200px) {
