@@ -1537,6 +1537,8 @@ body {
   }
   .navbar__search--mobail_visible, .navbar__user--mobail_visible {
     display: flex;
+    margin-left: 0;
+    max-width: 270px;
   }
   .navbar-buttom {
     display: none;
