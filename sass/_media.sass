@@ -204,7 +204,6 @@
   .activities
     pading-top: 40px
     margin-bottom: 60px
-    
   .card
     width: 49%
     height: 255px
@@ -249,7 +248,7 @@
   .footer
     &-wrapper
       grid-template-columns: 1fr
-      grid-gap: 10px
+      grid-gap: 0
     &__logo
       grid-row: 1
       grid-column: 1
@@ -286,7 +285,14 @@
         margin-top: 10px
         grid-row: 9
         grid-column: 1
-@media  ( max-width:320px  )
+    &__button
+      order: 2
+    &-info
+      order: 1 
+      flex-basis: 100%
+      margin-bottom: 20px
+      flex-wrap: wrap
+@media  ( max-width: 320px )
   .logo 
     width: 99px
   .hotel

@@ -1673,7 +1673,7 @@ body {
   }
   .footer-wrapper {
     grid-template-columns: 1fr;
-    grid-gap: 10px;
+    grid-gap: 0;
   }
   .footer__logo {
     grid-row: 1;
@@ -1719,6 +1719,15 @@ body {
     margin-top: 10px;
     grid-row: 9;
     grid-column: 1;
+  }
+  .footer__button {
+    order: 2;
+  }
+  .footer-info {
+    order: 1;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
   }
 }
 
