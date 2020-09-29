@@ -1738,6 +1738,9 @@ body {
     grid-row: 6;
     flex-basis: 100%;
     grid-column: 1;
+    margin-bottom: 40px;
+    width: 280px;
+    height: 330px;
   }
   .footer__cantact-form {
     grid-row: 7;
@@ -1801,6 +1804,22 @@ body {
   }
   .other-van__card {
     display: none;
+  }
+  .footer__item--mb {
+    max-width: 280px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+  }
+  .footer__item--width {
+    max-width: 228px;
+  }
+  .footer__item__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
   }
 }
 /*# sourceMappingURL=style.css.map */
