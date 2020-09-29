@@ -111,3 +111,11 @@ function init() {
     )
   );
 }
+
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  console.log("клик по кнопке");
+  document
+    .querySelector(".navbar-buttom")
+    .classList.toggle("navbar-buttom--visible");
+});
