@@ -126,24 +126,23 @@ $(document).ready(function () {
   modalButton.on("click", openModal);
   closeModalButton.on("click", closeModal);
 
-  function openModal() {
-    var modalOverley = $(".modal__overley");
-    var modalDialog = $(".modal__dialog");
+  var modalOverley = $(".modal__overley");
+  var modalDialog = $(".modal__dialog");
 
+  function openModal() {
     modalOverley.addClass("modal__overley--visible");
     modalDialog.addClass("modal__dialog--visible");
   }
   function closeModal(event) {
+    console.log(event.target);
     event.preventDefault();
-    var modalOverley = $(".modal__overley");
-    var modalDialog = $(".modal__dialog");
 
     modalOverley.removeClass("modal__overley--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
   $(document).on("keydown", function (event) {
     if (event.keyCode == 27) {
-      window.close(); // Do Something
+      closeModal(event);
     }
   });
 });
