@@ -1877,13 +1877,20 @@ body {
     flex-wrap: wrap;
   }
   .modal__dialog--visible {
-    padding: 33px 44px;
-    height: 420px;
+    padding: 0px 44px;
+    max-width: 480px;
+    min-height: 320px;
     min-width: 380px;
     max-width: 200px;
   }
   .modal-info {
     margin-left: 15px;
+  }
+  .modal__title {
+    margin-bottom: 0;
+  }
+  .modal__input {
+    height: 30px;
   }
 }
 
@@ -1938,17 +1945,13 @@ body {
   .modal__dialog--visible {
     padding: 0 10px;
     height: 310px;
-    min-width: 300px;
-    max-width: 300px;
-  }
-  .modal__from {
-    display: flex;
-    flex-wrap: wrap;
+    min-width: 310px;
+    max-width: 310px;
   }
   .modal__input {
     margin-right: 5px;
-    max-width: 45%;
-    margin-bottom: 5px;
+    max-width: 100%;
+    height: 30px;
   }
   .modal__button {
     width: 100%;
@@ -1958,6 +1961,7 @@ body {
     margin-left: 0;
   }
   .modal__title {
+    margin-bottom: 0;
     margin-top: 15px;
   }
 }
