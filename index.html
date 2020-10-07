@@ -754,19 +754,23 @@
           <!-- /.footer__cantact-derails -->
           <div class="footer__cantact-form">
             <h3 class="footer__title  footer__title--mb">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__from">
-              <input 
+            <form action="send.php" method="POST" class="footer__from from">
+              <div class="footer__imput--group">
+                <input 
               type="text" 
               class="input footer__imput" 
               placeholder="Your Full Name*"
-              name="name">
-              
-              <input 
+              name="name"
+              required>
+              </div>
+              <div class="footer__imput--group">
+                 <input 
               type="text" 
-              class="input footer__imput" 
+              class="input footer__imput phone_with_ddd" 
               placeholder="Phone Number*"
-              name="phone">
-              
+              name="phone"
+              required>
+              </div>                         
               <textarea 
               class="message footer__message" 
               placeholder="Messenge"
@@ -805,20 +809,27 @@
           <img src="img/close.svg" alt="icon: close ">
         </a>
         <h3 class="modal__title  modal__title--mb">Send us a message</h3>
-            <form action="send.php" method="POST" class="modal__from">
+            <form action="send.php" method="POST" class="modal__from from">
               <input 
               type="text" 
               class="input modal__input" 
               placeholder="Your Full Name*"
-              name="name">
+              name="name"
+              required
+              minlength="2">
               <input 
-              type="text" 
-              class="input modal__input" 
+              type="tel" 
+              class="input modal__input phone_with_ddd" 
               placeholder="Phone Number*"
-              name="phone">
-              <input type="text"
+              name="phone"
+              required
+              minlength="5">
+              <input type="email"
               class="input modal__input"
-              placeholder="Email*">
+              placeholder="Email*"
+              name="email"
+              required
+              minlength="2">
               <textarea 
               class="message modal__message" 
               placeholder="Messenge"
@@ -832,8 +843,8 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/main.js"></script> 
   </body>
 </html>

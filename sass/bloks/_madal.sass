@@ -16,7 +16,8 @@
   &__dialog
     position: fixed
     padding: 33px 88px
-    max-width: 478px
+    min-width: 478px
+    max-width: 487px
     left: 50%
     top: 50%
     transform: translate(-50%,-50%)
@@ -30,7 +31,6 @@
     &--visible
       visibility: visible
       opacity: 1
-
   &__title
     font-style: normal
     font-weight: bold
@@ -47,16 +47,18 @@
     cursor: pointer
   &__input
     width: 100%
-    margin-bottom: 15px
+    margin-top: 15px
+  &__button
+    margin-top: 15px
   &__message
     width: 100%
     min-width: 123px
     resize: none
-    margin-bottom: 15px
-  &__info
+    margin-top: 15px
+  &-info
+    margin-left: 50px
     font-style: normal
     font-weight: bold
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
-

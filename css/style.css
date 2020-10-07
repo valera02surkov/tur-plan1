@@ -386,6 +386,10 @@ body {
   cursor: pointer;
 }
 
+.invalid {
+  color: red;
+}
+
 .newsletter {
   position: relative;
   margin-top: 70px;
@@ -1344,6 +1348,10 @@ body {
 }
 
 .footer__imput {
+  width: 100%;
+}
+
+.footer__imput--group {
   margin-bottom: 15px;
   flex-basis: 48%;
 }
@@ -1405,7 +1413,8 @@ body {
 .modal__dialog {
   position: fixed;
   padding: 33px 88px;
-  max-width: 478px;
+  min-width: 478px;
+  max-width: 487px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -1443,17 +1452,22 @@ body {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.modal__button {
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-width: 123px;
   resize: none;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
-.modal__info {
+.modal-info {
+  margin-left: 50px;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -1482,7 +1496,7 @@ body {
     justify-content: center;
     grid-template-columns: repeat(auto-fill, 350px);
   }
-  .footer__imput {
+  .footer__imput--group {
     flex-basis: 100%;
   }
 }
@@ -1558,8 +1572,8 @@ body {
     grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
   }
-  .footer__imput {
-    flex-basis: 49%;
+  .footer__imput--group {
+    flex-basis: 48%;
   }
   .footer__logo {
     grid-row: 1/2;
@@ -1590,6 +1604,9 @@ body {
   .footer__bottom {
     grid-column: 1/6;
     grid-row: span 6;
+  }
+  .modal-info {
+    margin-left: 15px;
   }
 }
 
@@ -1749,8 +1766,11 @@ body {
     width: 49%;
     height: 255px;
   }
-  .footer__imput {
+  .footer__imput--group {
     flex-basis: 100%;
+  }
+  .modal-info {
+    margin-left: 15px;
   }
 }
 
@@ -1856,6 +1876,15 @@ body {
     margin-bottom: 20px;
     flex-wrap: wrap;
   }
+  .modal__dialog--visible {
+    padding: 33px 44px;
+    height: 420px;
+    min-width: 380px;
+    max-width: 200px;
+  }
+  .modal-info {
+    margin-left: 15px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1905,6 +1934,31 @@ body {
     font-weight: normal;
     font-size: 14px;
     line-height: 160%;
+  }
+  .modal__dialog--visible {
+    padding: 0 10px;
+    height: 310px;
+    min-width: 300px;
+    max-width: 300px;
+  }
+  .modal__from {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .modal__input {
+    margin-right: 5px;
+    max-width: 45%;
+    margin-bottom: 5px;
+  }
+  .modal__button {
+    width: 100%;
+  }
+  .modal-info {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .modal__title {
+    margin-top: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */

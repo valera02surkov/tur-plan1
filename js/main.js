@@ -145,4 +145,26 @@ $(document).ready(function () {
       closeModal(event);
     }
   });
+  //обработка форм
+  $(".from").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Ваше имя",
+          minlength: "Имя не должно быть не короче 2 букв",
+        },
+        email: {
+          required: "Ваш EMAIL",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "Телефон обязателен",
+        },
+      },
+    });
+  });
+  $(document).ready(function () {
+    $(".phone_with_ddd").mask("0(000)000-00-00");
+  });
 });
