@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css" />
     <script
       src="https://api-maps.yandex.ru/2.1/?apikey=<4746e7e2-cc3b-4314-afae-db309270e172>&lang=en_US"
@@ -21,6 +22,7 @@
         <div class="navbar-top">
           <a href="#" class="logo">
             <img
+              data-aos="flip-up"
               src="img/horizontal-logo.svg"
               alt="logo: Best Tour Plan"
               class="logo__img"
@@ -32,11 +34,11 @@
               placeholder="Search Location"
               class="search__imput"
             />
-            <button class="search__button">
+            <button class="search__button" >
               <img src="img/search.svg" alt="icon: search" />
             </button>
           </form>
-          <a href="#" class="user navbar__user navbar__user--mobail_hiden">
+          <a href="#" class="user navbar__user navbar__user--mobail_hiden"data-aos="flip-up">
             <img
               src="img/user-avatar.jpg"
               alt="avatar:nathan"
@@ -168,7 +170,7 @@
           </div>
           <!--/sweper-container-->
           <div class="hotel-right">
-            <div class="booking">
+            <div class="booking" data-aos="zoom-in">
               <div class="booking__info">
                 <div class="booking-prise">
                   <span class="booking__start">price starts as </span>
@@ -205,7 +207,7 @@
               <!-- /.booking__call-center -->
               <button data-toggle="modal" class="button booking__button">View Other Options</button>
             </div>
-            <div id="map" class="map"></div>
+            <div id="map" class="map" data-aos="zoom-in"></div>
             <!-- /.map -->
           </div>
           <!--/booking-->
@@ -217,7 +219,7 @@
       <div class="container">
         <h2 class="other-title">Other Packages</h2>
         <div class="other__container">
-          <div class="other-van__card">
+          <div class="other-van__card" data-aos="zoom-out-right">
             <div class="other-card">
               <img
                 alt=""
@@ -276,7 +278,7 @@
             <!--/other-menu-->
           </div>
           <!--/other-van__card-->
-          <div class="other-card-mini">
+          <div class="other-card-mini" data-aos="zoom-out-left">
             <div class="other-card-mini-img">
               <img class="other-card-mini__img" src="img/img-other-card/other-card-mini.jpg" alt="photo" />
               <span class="other-card-mini-img__card">Flash Offer</span>
@@ -315,7 +317,7 @@
             </div>
             </div>
             <!-- /.other-card-mini__img -->
-            <div class="other-card-mini">
+            <div class="other-card-mini" data-aos="zoom-out">
             <div class="other-card-mini-img">
               <img class="other-card-mini__img" src="img/img-other-card/other-card-mini-1.jpg" alt="photo" />
               <span class="other-card-mini-img__card">Flash Offer</span>
@@ -354,7 +356,7 @@
             </div>
             </div>
             <!-- /.other-card-mini__img -->
-            <div class="other-card-mini">
+            <div class="other-card-mini"  data-aos="zoom-out-up">
             <div class="other-card-mini-img">
               <img class="other-card-mini__img" src="img/img-other-card/other-card-mini-2.jpg" alt="photo" />
               <span class="other-card-mini-img__card">Flash Offer</span>
@@ -393,7 +395,7 @@
             </div>
             </div>
             <!-- /.other-card-mini__img -->
-            <div class="other-card-mini">
+            <div class="other-card-mini" data-aos="zoom-out-left">
             <div class="other-card-mini-img">
               <img class="other-card-mini__img" src="img/img-other-card/other-card-mini-3.jpg" alt="photo" />
               <span class="other-card-mini-img__card">Flash Offer</span>
@@ -587,7 +589,8 @@
       <div class="container">
         <h2 class="activities-title">Other Activites</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
             <img
               src="img/activity-2.jpg"
               alt="The curious corner of chamarel"
@@ -597,7 +600,8 @@
             <button class="card__batton">Book Now</button>
             <!-- /.card__batton -->
           </div>
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
             <img
               src="img/activity-3.jpg"
               alt="Gymkhana club golf course"
@@ -607,7 +611,8 @@
             <button class="card__batton">Book Now</button>
             <!-- /.card__batton -->
           </div>
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
             <img
               src="img/activity-4.jpg"
               alt="Tamarind falls hikingtrip - full day"
@@ -617,7 +622,8 @@
             <button class="card__batton">Book Now</button>
             <!-- /.card__batton -->
           </div>
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
             <img
               src="img/activity-5.jpg"
               alt="The blue marine discovery quest"
@@ -845,6 +851,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script> 
   </body>
 </html>

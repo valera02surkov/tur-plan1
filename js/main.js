@@ -167,4 +167,5 @@ $(document).ready(function () {
   $(document).ready(function () {
     $(".phone_with_ddd").mask("0(000)000-00-00");
   });
+  AOS.init();
 });
