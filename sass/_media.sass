@@ -361,7 +361,7 @@
 @media  ( max-width: 320px )
   .container
     max-width: 320px
-    margin-left: 0
+    margin: auto
   .navbar
     max-width: 320px
     overflow-y: scroll
@@ -393,10 +393,15 @@
     &__container
       max-width: 320px
       justify-content: center
-      grid-template-columns: repeat(auto-fill, 320px)
+      grid-template-columns: repeat(auto-fill, 290px)
+      overflow: hidden
     &-van
       &__card
         display: none
+    &-card
+      &-mini
+.img
+  width: 100%
   .footer
     &__icon
       &-wrapper
@@ -434,9 +439,15 @@
     &__title
       margin-bottom: 0
       margin-top: 15px
+  .img
+    min-width: 100%
 @media  ( max-height: 400px )
   .modal
     &__dialog
       &--visible
         overflow-y: auto
         max-height: 320px
+  .navbar
+    &-menu
+      overflow-y: auto
+      max-height: 320px

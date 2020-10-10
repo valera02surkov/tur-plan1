@@ -352,8 +352,9 @@ body {
   margin: auto;
 }
 
-img {
+.img {
   max-width: 100%;
+  min-width: 100%;
 }
 
 .input {
@@ -1905,7 +1906,7 @@ img {
 @media (max-width: 320px) {
   .container {
     max-width: 320px;
-    margin-left: 0;
+    margin: auto;
   }
   .navbar {
     max-width: 320px;
@@ -1941,53 +1942,74 @@ img {
   .other__container {
     max-width: 320px;
     justify-content: center;
-    grid-template-columns: repeat(auto-fill, 320px);
+    grid-template-columns: repeat(auto-fill, 290px);
+    overflow: hidden;
   }
   .other-van__card {
     display: none;
   }
-  .footer__item--mb {
-    max-width: 280px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 160%;
-  }
-  .footer__item--width {
-    max-width: 228px;
-  }
-  .footer__item__text {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 160%;
-  }
-  .modal__dialog--visible {
-    padding: 0 10px;
-    height: 310px;
-    min-width: 310px;
-    max-width: 310px;
-  }
-  .modal__input {
-    margin-right: 5px;
-    max-width: 100%;
-    height: 30px;
-  }
-  .modal__button {
-    width: 100%;
-  }
-  .modal-info {
-    margin-top: 0;
-    margin-left: 0;
-  }
-  .modal__title {
-    margin-bottom: 0;
-    margin-top: 15px;
-  }
+}
+
+.img {
+  width: 100%;
+}
+
+.img .footer__item--mb {
+  max-width: 280px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+}
+
+.img .footer__item--width {
+  max-width: 228px;
+}
+
+.img .footer__item__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+}
+
+.img .modal__dialog--visible {
+  padding: 0 10px;
+  height: 310px;
+  min-width: 310px;
+  max-width: 310px;
+}
+
+.img .modal__input {
+  margin-right: 5px;
+  max-width: 100%;
+  height: 30px;
+}
+
+.img .modal__button {
+  width: 100%;
+}
+
+.img .modal-info {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.img .modal__title {
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+.img .img {
+  min-width: 100%;
 }
 
 @media (max-height: 400px) {
   .modal__dialog--visible {
+    overflow-y: auto;
+    max-height: 320px;
+  }
+  .navbar-menu {
     overflow-y: auto;
     max-height: 320px;
   }
