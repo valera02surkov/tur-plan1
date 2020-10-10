@@ -22,7 +22,6 @@
     &__imput
       &--group
         flex-basis: 100%
-
 @media ( max-width: 992px  )
   .container,
   .newsletter-wrapper
@@ -460,3 +459,35 @@
     &-menu
       overflow-y: auto
       max-height: 320px
+@media (min-width: 991px)
+  .button:hover
+    background-color: blue
+    transition: background-color 0.3s
+  .search
+    &__button:hover
+      background-color: blue
+      transition: background-color 0.3s
+  .card
+    &__batton:hover
+      background-color: blue
+      transition: background-color 0.3s
+  .tel:hover
+    color: $light
+    transition: color 0.2s
+  .navbar
+    &-menu
+      &__link:hover
+        color: red
+        font-size: 20px
+        transition: color 0.2s
+  .footer
+    &__link:hover
+      color: $light
+      transition: color 0.2s
+  .mail:hover
+    color: $light
+    transition: color 0.2s
+  .user
+    &__name:hover
+      font-size: 15px
+      text-decoration: underline
