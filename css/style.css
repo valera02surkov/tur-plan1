@@ -352,8 +352,8 @@ body {
   margin: auto;
 }
 
-.img {
-  min-width: 100%;
+img {
+  max-width: 100%;
 }
 
 .input {
@@ -388,6 +388,11 @@ body {
 
 .invalid {
   color: red;
+}
+
+.tel {
+  text-decoration: none;
+  color: #BDBDBD;
 }
 
 .newsletter {
@@ -1775,6 +1780,9 @@ body {
 }
 
 @media (max-width: 576px) {
+  .container {
+    max-width: 576px;
+  }
   .other__container {
     max-width: 576px;
     justify-content: center;
@@ -1895,6 +1903,18 @@ body {
 }
 
 @media (max-width: 320px) {
+  .container {
+    max-width: 320px;
+    margin-left: 0;
+  }
+  .navbar {
+    max-width: 320px;
+    overflow-y: scroll;
+  }
+  .navbar-menu {
+    overflow-y: scroll;
+    height: 458px;
+  }
   .logo {
     width: 99px;
   }
@@ -1963,6 +1983,13 @@ body {
   .modal__title {
     margin-bottom: 0;
     margin-top: 15px;
+  }
+}
+
+@media (max-height: 400px) {
+  .modal__dialog--visible {
+    overflow-y: auto;
+    max-height: 320px;
   }
 }
 /*# sourceMappingURL=style.css.map */

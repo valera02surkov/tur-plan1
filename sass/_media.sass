@@ -258,6 +258,8 @@
     &-info
       margin-left: 15px
 @media ( max-width: 576px )
+  .container
+    max-width: 576px
   .other
     &__container
       max-width: 576px
@@ -356,8 +358,16 @@
       margin-bottom: 0
     &__input
       height: 30px
-
 @media  ( max-width: 320px )
+  .container
+    max-width: 320px
+    margin-left: 0
+  .navbar
+    max-width: 320px
+    overflow-y: scroll
+    &-menu
+      overflow-y: scroll
+      height: 458px
   .logo
     width: 99px
   .hotel
@@ -424,3 +434,9 @@
     &__title
       margin-bottom: 0
       margin-top: 15px
+@media  ( max-height: 400px )
+  .modal
+    &__dialog
+      &--visible
+        overflow-y: auto
+        max-height: 320px

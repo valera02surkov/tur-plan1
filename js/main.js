@@ -151,15 +151,16 @@ $(document).ready(function () {
       errorClass: "invalid",
       messages: {
         name: {
-          required: "Ваше имя",
-          minlength: "Имя не должно быть не короче 2 букв",
+          required: "You Name",
+          minlength: "The name must not be shorter than 2 letters",
         },
         email: {
-          required: "Ваш EMAIL",
+          required: "EMAIL",
           email: "Your email address must be in the format of name@domain.com",
         },
         phone: {
-          required: "Телефон обязателен",
+          required: "Phone number required",
+          minlength: "Enter your phone number in at least 11 characters"
         },
       },
     });

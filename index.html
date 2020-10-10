@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan -Hotel Booking</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon"> 
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
@@ -20,7 +22,7 @@
     <header class="navbar navbar--mobail__fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="/index.html" class="logo">
             <img
               data-aos="flip-up"
               src="img/horizontal-logo.svg"
@@ -207,7 +209,7 @@
               <!-- /.booking__call-center -->
               <button data-toggle="modal" class="button booking__button">View Other Options</button>
             </div>
-            <div id="map" class="map" data-aos="zoom-in"></div>
+            <div id="map" class="map"></div>
             <!-- /.map -->
           </div>
           <!--/booking-->
@@ -273,7 +275,7 @@
                 <strong class="other-stong__min">$ 10,500</strong>
                 <strong class="other-stong__max">$ 8,500</strong>
               </div>
-              <button class="botton other-button">Book Now</button>
+              <button  data-toggle="modal" class="botton other-button">Book Now</button>
             </div>
             <!--/other-menu-->
           </div>
@@ -313,7 +315,7 @@
                 <strong class="other-card-mini-stong__min">$ 8,500</strong>
                 <strong class="other-stong__max">$ 3,000</strong>
               </div>
-              <button class="botton other-card-mini__button other-button">Book Now</button>
+              <button  data-toggle="modal" class="botton other-card-mini__button other-button">Book Now</button>
             </div>
             </div>
             <!-- /.other-card-mini__img -->
@@ -352,7 +354,7 @@
                 <strong class="other-card-mini-stong__min">$ 10,500</strong>
                 <strong class="other-stong__max">$ 9,500</strong>
               </div>
-              <button class="botton other-card-mini__button other-button">Book Now</button>
+              <button  data-toggle="modal" class="botton other-card-mini__button other-button">Book Now</button>
             </div>
             </div>
             <!-- /.other-card-mini__img -->
@@ -391,7 +393,7 @@
                 <strong class="other-card-mini-stong__min">$ 4,500</strong>
                 <strong class="other-stong__max">$ 2,500</strong>
               </div>
-              <button class="botton other-card-mini__button other-button">Book Now</button>
+              <button  data-toggle="modal" class="botton other-card-mini__button other-button">Book Now</button>
             </div>
             </div>
             <!-- /.other-card-mini__img -->
@@ -430,11 +432,10 @@
                 <strong class="other-card-mini-stong__min">$ 6,500</strong>
                 <strong class="other-stong__max">$ 3,500</strong>
               </div>
-              <button class="botton other-card-mini__button other-button">Book Now</button>
+              <button  data-toggle="modal" class="botton other-card-mini__button other-button">Book Now</button>
             </div>
             </div>
             <!-- /.other-card-mini__img -->
-            
           </div>
         </div>
         <!--/other__container-->
@@ -447,8 +448,9 @@
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form action="#" class="subscribe newsletter__subscribe">
+        <form action="#" method="POST" class="subscribe newsletter__subscribe from" novalidate:"novalidate">
           <input
+            type="email"
             placeholder="Your email address"
             class="subscribe__imput"
             name="email"/>
@@ -590,14 +592,14 @@
         <h2 class="activities-title">Other Activites</h2>
         <div class="activities-wrapper">
           <div class="card activities__card" data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom">
+              data-aos-anchor-placement="top-bottom">
             <img
               src="img/activity-2.jpg"
               alt="The curious corner of chamarel"
               class="card__image"
             />
             <h3 class="card__title">The curious corner of chamarel</h3>
-            <button class="card__batton">Book Now</button>
+            <button  data-toggle="modal" class="card__batton">Book Now</button>
             <!-- /.card__batton -->
           </div>
           <div class="card activities__card" data-aos="fade-up"
@@ -608,7 +610,7 @@
               class="card__image"
             />
             <h3 class="card__title">Gymkhana club golf course</h3>
-            <button class="card__batton">Book Now</button>
+            <button data-toggle="modal" class="card__batton">Book Now</button>
             <!-- /.card__batton -->
           </div>
           <div class="card activities__card" data-aos="fade-up"
@@ -619,7 +621,7 @@
               class="card__image"
             />
             <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
-            <button class="card__batton">Book Now</button>
+            <button  data-toggle="modal" class="card__batton">Book Now</button>
             <!-- /.card__batton -->
           </div>
           <div class="card activities__card" data-aos="fade-up"
@@ -630,7 +632,7 @@
               class="card__image"
             />
             <h3 class="card__title">The blue marine discovery quest</h3>
-            <button class="card__batton">Book Now</button>
+            <button  data-toggle="modal" class="card__batton">Book Now</button>
             <!-- /.card__batton -->
           </div>
           <!-- /.card -->
@@ -641,7 +643,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img src="img/vertical-logo.svg" alt="logo: best-tour-plan" class="logo footer__logo">
+          <a class="logo footer__logo" href="/index.html"><img src="img/vertical-logo.svg" alt="logo: best-tour-plan" class="logo footer__logo"></a>
           <div class="footer-list footer__categories">
             <h3 class="footer-title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
@@ -745,9 +747,9 @@
                 <div class="footer__icon-wrapper">
                   <img src="img/phote-call.svg" alt="icon: call">
                 </div>
-               <div class=footer__item--width> Tel (business hours) : 269 1500 <br/>
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br/>
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</div>
+               <div class=footer__item--width> Tel (business hours) : <a  class="tel" href="tel:+269 1500 ">269 1500</a><br/>
+                Tel (hotline) Monday - Saturday: <a class="tel" href="tel:+52-56-61-38">52-56-61-38 </a> (08:00 am – 20:00 pm) <br/>
+                Tel (hotline) Sunday:  <a class="tel" href="tel:+52-56-61-38">52-56-61-38</a> (08:00 am – 14:00 pm)</div>
               </li>
               <li class="footer__item footer__item--mb">
                 <div class="footer__icon-wrapper">
@@ -829,7 +831,7 @@
               placeholder="Phone Number*"
               name="phone"
               required
-              minlength="5">
+              minlength="11">
               <input type="email"
               class="input modal__input"
               placeholder="Email*"
