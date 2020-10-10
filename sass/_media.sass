@@ -113,6 +113,9 @@
     &-info
       margin-left: 15px
 @media ( max-width: 768px  )
+  .invalid
+    font-size: 10px
+
   .container
     max-width: 576px
     width: 92%
@@ -375,6 +378,14 @@
       height: 200px
       &__slider
         margin-bottom: 20px
+      &__button
+        width: 10px
+        height: 10px
+        &--next
+          right: 5px
+        &--prev
+          left: 5px
+
   .reviews
     &-slider
       &__text
@@ -398,8 +409,6 @@
     &-van
       &__card
         display: none
-    &-card
-      &-mini
 .img
   width: 100%
   .footer

@@ -389,6 +389,7 @@ body {
 
 .invalid {
   color: red;
+  position: relative;
 }
 
 .tel {
@@ -447,6 +448,11 @@ body {
   height: 55px;
   border-radius: 4px;
   overflow: hidden;
+}
+
+.subscribe > .invalid {
+  font-size: 10px;
+  line-height: 12px;
 }
 
 .subscribe__imput {
@@ -1617,6 +1623,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .invalid {
+    font-size: 10px;
+  }
   .container {
     max-width: 576px;
     width: 92%;
@@ -1924,6 +1933,16 @@ body {
   }
   .hotel-slider__slider {
     margin-bottom: 20px;
+  }
+  .hotel-slider__button {
+    width: 10px;
+    height: 10px;
+  }
+  .hotel-slider__button--next {
+    right: 5px;
+  }
+  .hotel-slider__button--prev {
+    left: 5px;
   }
   .reviews-slider__text {
     text-align: start;
