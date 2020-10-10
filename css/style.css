@@ -397,6 +397,14 @@ body {
   color: #BDBDBD;
 }
 
+.mail {
+  color: #BDBDBD;
+}
+
+a {
+  text-decoration: none;
+}
+
 .newsletter {
   position: relative;
   margin-top: 70px;
@@ -1343,6 +1351,7 @@ body {
 
 .footer__item--mb {
   margin-bottom: 20px;
+  color: #BDBDBD;
 }
 
 .footer__icon-wrapper {
