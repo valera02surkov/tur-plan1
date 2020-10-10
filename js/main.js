@@ -156,7 +156,7 @@ $(document).ready(function () {
         },
         email: {
           required: "EMAIL",
-          email: "Your email address must be in the format of name@domain.com",
+          email: "Your email not correct name@domain.com",
         },
         phone: {
           required: "Phone number required",

@@ -107,17 +107,15 @@
         grid-row: 4
     &__bottom
       grid-column: 1/6
-      grid-row: span 6
   .modal
     &-info
       margin-left: 15px
-@media ( max-width: 768px  )
+@media ( max-width: 767px  )
   .invalid
     font-size: 10px
-
   .container
     max-width: 576px
-    width: 92%
+    margin: auto
   .other
     &__container
       max-width: 576px
@@ -128,6 +126,11 @@
     &-van
       &__card
         display: none
+    &-button
+      right: 15px
+      bottom: 15px
+      min-width: 100px
+      max-height: 20px
   .navbar
     &--mobail
       &__fixed
@@ -260,8 +263,11 @@
     &-info
       margin-left: 15px
 @media ( max-width: 576px )
+  .breadcrumb
+    padding-top: 117px
   .container
     max-width: 576px
+    width: 92%
   .other
     &__container
       max-width: 576px
@@ -346,6 +352,8 @@
       flex-basis: 100%
       margin-bottom: 20px
       flex-wrap: wrap
+    &__title
+      margin-top: 10px
   .modal
     &__dialog
       &--visible
@@ -384,7 +392,6 @@
           right: 5px
         &--prev
           left: 5px
-
   .reviews
     &-slider
       &__text
@@ -408,14 +415,21 @@
     &-van
       &__card
         display: none
-.img
-  width: 100%
+    &-title
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      text-transform: uppercase
+      text-align: left
+  .img
+    width: 100%
   .footer
     &__icon
       &-wrapper
     &__item
       &--mb
-        max-width: 280px
+        max-width: 270px
         font-style: normal
         font-weight: normal
         font-size: 14px
@@ -461,7 +475,7 @@
       max-height: 320px
 @media (min-width: 991px)
   .button:hover
-    background-color: blue
+    background-color: darken($primory, 20% )
     transition: background-color 0.3s
   .search
     &__button:hover
@@ -491,3 +505,14 @@
     &__name:hover
       font-size: 15px
       text-decoration: underline
+  .booking
+    &__number:hover
+      color: $primory
+      text-decoration: underline
+      transition: color 0.5s
+  .footer
+    &__bottom
+      &--text:hover
+        text-decoration: underline
+    &__icon:hover
+      transform: rotateZ(45deg)

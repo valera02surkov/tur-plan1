@@ -388,7 +388,7 @@ body {
   transition: background-color 0.2s;
 }
 
-.button .invalid {
+.invalid {
   color: red;
   position: relative;
 }
@@ -404,6 +404,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.thenk__yoo {
+  margin-top: 20px;
 }
 
 .newsletter {
@@ -459,9 +463,15 @@ a {
   overflow: hidden;
 }
 
+.subscribe__button {
+  border-radius: 0 4px 4px 0;
+}
+
 .subscribe > .invalid {
+  position: absolute;
   font-size: 10px;
   line-height: 12px;
+  color: red;
 }
 
 .subscribe__imput {
@@ -567,6 +577,7 @@ a {
   height: 100%;
   border: none;
   background-color: #ec1f46;
+  cursor: pointer;
 }
 
 .user {
@@ -621,7 +632,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 }
 
 .hotel-info__offer {
@@ -709,11 +720,13 @@ a {
 .hotel-slider__button--next {
   right: 18px;
   background-image: url(../img/arrow-next.svg);
+  cursor: pointer;
 }
 
 .hotel-slider__button--prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
+  cursor: pointer;
 }
 
 .stars {
@@ -760,7 +773,8 @@ a {
   border-radius: 8px;
   width: 350px;
   min-height: 210px;
-  padding: 28px;
+  padding: 20px 28px 28px 28px;
+  margin-bottom: 20px;
 }
 
 .booking__info {
@@ -865,10 +879,11 @@ a {
   background-color: #000000;
   border-radius: 10px;
   overflow: hidden;
+  padding-bottom: 40px;
 }
 
 .reviews {
-  padding: 40px 0 70px 0;
+  padding: 40px 0 40px 0;
 }
 
 .reviews-title {
@@ -890,7 +905,7 @@ a {
   margin-top: 45px;
   background-color: #fff;
   border-radius: 8px;
-  padding: 0 62px 30px;
+  padding: 0 62px 40px;
   position: relative;
 }
 
@@ -990,14 +1005,15 @@ a {
 }
 
 .activities {
-  padding: 60px 0 98px 0;
+  padding: 0px 0 98px 0;
 }
 
 .activities-title {
+  margin-top: 0;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 23px;
   text-transform: uppercase;
   margin-bottom: 57px;
 }
@@ -1073,6 +1089,7 @@ a {
 }
 
 .other-title {
+  margin-top: 0;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -1314,7 +1331,7 @@ a {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 95px;
+  margin-bottom: 0px;
 }
 
 .footer__ul {
@@ -1475,6 +1492,10 @@ a {
 .modal__input {
   width: 100%;
   margin-top: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .modal__button {
@@ -1484,8 +1505,13 @@ a {
 .modal__message {
   width: 100%;
   min-width: 123px;
+  min-height: 123px;
   resize: none;
   margin-top: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .modal-info {
@@ -1625,20 +1651,19 @@ a {
   }
   .footer__bottom {
     grid-column: 1/6;
-    grid-row: span 6;
   }
   .modal-info {
     margin-left: 15px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .invalid {
     font-size: 10px;
   }
   .container {
     max-width: 576px;
-    width: 92%;
+    margin: auto;
   }
   .other__container {
     max-width: 576px;
@@ -1649,6 +1674,12 @@ a {
   }
   .other-van__card {
     display: none;
+  }
+  .other-button {
+    right: 15px;
+    bottom: 15px;
+    min-width: 100px;
+    max-height: 20px;
   }
   .navbar--mobail__fixed {
     position: fixed;
@@ -1800,8 +1831,12 @@ a {
 }
 
 @media (max-width: 576px) {
+  .breadcrumb {
+    padding-top: 117px;
+  }
   .container {
     max-width: 576px;
+    width: 92%;
   }
   .other__container {
     max-width: 576px;
@@ -1904,6 +1939,9 @@ a {
     margin-bottom: 20px;
     flex-wrap: wrap;
   }
+  .footer__title {
+    margin-top: 10px;
+  }
   .modal__dialog--visible {
     padding: 0px 44px;
     max-width: 480px;
@@ -1977,60 +2015,58 @@ a {
   .other-van__card {
     display: none;
   }
-}
-
-.img {
-  width: 100%;
-}
-
-.img .footer__item--mb {
-  max-width: 280px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 160%;
-}
-
-.img .footer__item--width {
-  max-width: 228px;
-}
-
-.img .footer__item__text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 160%;
-}
-
-.img .modal__dialog--visible {
-  padding: 0 10px;
-  height: 310px;
-  min-width: 310px;
-  max-width: 310px;
-}
-
-.img .modal__input {
-  margin-right: 5px;
-  max-width: 100%;
-  height: 30px;
-}
-
-.img .modal__button {
-  width: 100%;
-}
-
-.img .modal-info {
-  margin-top: 0;
-  margin-left: 0;
-}
-
-.img .modal__title {
-  margin-bottom: 0;
-  margin-top: 15px;
-}
-
-.img .img {
-  min-width: 100%;
+  .other-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  .img {
+    width: 100%;
+  }
+  .footer__item--mb {
+    max-width: 270px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+  }
+  .footer__item--width {
+    max-width: 228px;
+  }
+  .footer__item__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+  }
+  .modal__dialog--visible {
+    padding: 0 10px;
+    height: 310px;
+    min-width: 310px;
+    max-width: 310px;
+  }
+  .modal__input {
+    margin-right: 5px;
+    max-width: 100%;
+    height: 30px;
+  }
+  .modal__button {
+    width: 100%;
+  }
+  .modal-info {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .modal__title {
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+  .img {
+    min-width: 100%;
+  }
 }
 
 @media (max-height: 400px) {
@@ -2046,7 +2082,7 @@ a {
 
 @media (min-width: 991px) {
   .button:hover {
-    background-color: blue;
+    background-color: #980d27;
     transition: background-color 0.3s;
   }
   .search__button:hover {
@@ -2077,6 +2113,17 @@ a {
   .user__name:hover {
     font-size: 15px;
     text-decoration: underline;
+  }
+  .booking__number:hover {
+    color: #ec1f46;
+    text-decoration: underline;
+    transition: color 0.5s;
+  }
+  .footer__bottom--text:hover {
+    text-decoration: underline;
+  }
+  .footer__icon:hover {
+    transform: rotateZ(45deg);
   }
 }
 /*# sourceMappingURL=style.css.map */

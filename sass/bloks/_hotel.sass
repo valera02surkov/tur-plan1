@@ -5,7 +5,7 @@
     display: flex
     align-items: center
     justify-content: space-between
-    padding-bottom: 20px
+    padding-bottom: 18px
     &__offer
       margin-left: 14px
       margin-top: 4px
@@ -23,10 +23,10 @@
     align-items: center
   &-description
     font-size: 12px
-    line-height: 15px 
+    line-height: 15px
   &-gred
-    display: flex 
-    justify-content: space-between    
+    display: flex
+    justify-content: space-between
   &-right
     display: flex
     flex-direction: column
@@ -51,7 +51,7 @@
         left: 0
         right: 0
         z-index: 10
-        background: linear-gradient(180deg, 
+        background: linear-gradient(180deg,
         rgba(0, 122, 223, 0.48) 0%, 
         rgba(255, 255, 255, 0.128) 100%) 
     &__button
@@ -64,14 +64,16 @@
       border: none
       background-repeat: no-repeat
       background-position: center
-      background-size: 10px   
+      background-size: 10px
       background-color: transparent
       &--next
         right: 18px
         background-image: url(../img/arrow-next.svg)
+        cursor: pointer
       &--prev
         left: 18px
         background-image: url(../img/arrow-prev.svg)
+        cursor: pointer
 .stars
   flex-basis: 100%
 .offer
@@ -96,7 +98,7 @@
     font-size: 14px
     line-height: 18px
     &--sup
-      font-size: 10px  
+      font-size: 10px
 .booking
   position: relative
   background: $dark
@@ -104,7 +106,8 @@
   border-radius: 8px
   width: 350px
   min-height: 210px
-  padding: 28px
+  padding: 20px 28px 28px 28px
+  margin-bottom: 20px
   &__info
     display: flex
     justify-content: space-between
@@ -135,7 +138,7 @@
     justify-content: space-between
     margin-bottom: 8px
     font-style: normal
-    font-weight: normal 
+    font-weight: normal
   &__icon
     margin-right: 8px
   &__description
@@ -173,9 +176,10 @@
     background-color: $primory
     color: $light
     cursor: pointer
-.map 
+.map
   width: 347px
   height: 213px
   background-color: #000000
   border-radius: 10px
   overflow: hidden
+  padding-bottom: 40px

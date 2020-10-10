@@ -502,7 +502,7 @@
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
         <form
-          action="#"
+          action="send.php"
           method="POST"
           class="subscribe newsletter__subscribe from"
         >
@@ -511,6 +511,7 @@
             placeholder="Your email address"
             class="subscribe__imput"
             name="email"
+            required
           />
           <button class="button subscribe__button" type="submit">
             <span>Send</span>
@@ -778,13 +779,13 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link">
+              <a href="#" class="footer__link footer__icon">
                 <img src="img/facebook.svg" alt="icon: facebook" />
               </a>
-              <a href="#" class="footer__link">
+              <a href="#" class="footer__link footer__icon">
                 <img src="img/yootube.svg" alt="icon:youtube" />
               </a>
-              <a href="#" class="footer__link">
+              <a href="#" class="footer__link footer__icon">
                 <img src="img/instagram.svg" alt="icon:instagram" />
               </a>
             </div>
@@ -829,7 +830,9 @@
                   Tel (business hours) :
                   <a href="tel:+269-1500" class="tel">269 1500</a><br />
                   Tel (hotline) Monday - Saturday:
-                  <a href="tel:+52-56-61-38" class="tel">52-56-61-38 </a>
+                  <a href="tel:+52-56-61-38" class="tel"
+                    >52&#160;56&#160;61&#160;38</a
+                  >
                   (08:00 am – 20:00 pm) <br />
                   Tel (hotline) Sunday:
                   <a href="tel:+52-56-61-38" class="tel">52-56-61-38</a> (08:00
@@ -935,7 +938,7 @@
           />
           <textarea
             class="message modal__message"
-            placeholder="Messenge"
+            placeholder="Message"
             name="message"
           ></textarea>
           <button class="button modal__button" type="submit">Send</button>
